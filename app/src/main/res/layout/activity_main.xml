@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFD5E4"
     android:onClick="onBtnClicked"
     tools:context=".MainActivity">
 
@@ -40,23 +41,34 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        android:background="#2196F3"
         android:onClick="onBtnClicked"
+        android:shadowColor="#FB8EB4"
         android:text="+"
+        android:textColor="#FFA4C3"
+        android:textColorHighlight="#F889AF"
+        android:textColorHint="#FF9CBD"
+        android:textColorLink="#F892B5"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.216"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.212" />
+        app:layout_constraintVertical_bias="0.212"
+        app:rippleColor="#FD96B9"
+        app:strokeColor="#FB8FB4" />
 
     <Button
         android:id="@+id/btnMinus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        android:background="#FD9BBD"
+        android:backgroundTint="#FB8EB4"
         android:onClick="onBtnClicked"
         android:text="-"
+        android:textColor="#FFA4C3"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -70,8 +82,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        android:background="#DB63EF"
         android:onClick="onBtnClicked"
         android:text="x"
+        android:textColor="#FFA4C3"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -87,6 +101,7 @@
         android:layout_marginTop="20dp"
         android:onClick="onBtnClicked"
         android:text=":"
+        android:textColor="#FFA4C3"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -94,5 +109,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.477" />
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="97dp"
+        android:layout_height="60dp"
+        android:backgroundTint="#BB96FB"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.706" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
